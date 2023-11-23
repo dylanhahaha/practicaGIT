@@ -19,13 +19,13 @@ namespace Ejercicio_2
 
         private void bCalcular_Click(object sender, EventArgs e)
         {
-            string textoTelegrama;
+            string txtoTelegrama;
             char tipoTelegrama = 'o';
             int numPalabras = 0;
             double coste;
            
             //Leo el telegrama
-            textoTelegrama = txtTelegrama.Text;
+            txtoTelegrama = txtTelegrama.Text;
             string[] texto = textoTelegrama.Split(' ');
             // telegrama urgente?
             if (cbUrgente.Checked)
@@ -48,6 +48,8 @@ namespace Ejercicio_2
             else
                 coste = 0;
             txtPrecio.Text = coste.ToString() + " euros";
+
+            // Prueba cambios git ffff
         }
 
     }
