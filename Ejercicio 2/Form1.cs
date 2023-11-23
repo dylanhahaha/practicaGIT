@@ -26,9 +26,9 @@ namespace Ejercicio_2
            
             //Leo el telegrama
             txtoTelegrama = txtTelegrama.Text;
-            string[] texto = textoTelegrama.Split(' ');
+            string[] texto = txtoTelegrama.Split(' ');
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (radioButton2.Checked)
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = texto.Length;
